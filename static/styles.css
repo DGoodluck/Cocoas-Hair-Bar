@@ -1,0 +1,73 @@
+.about-container { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    width: 100%; 
+    align-items: center;
+    align-content: center;
+    background-color: black;
+} 
+.about { 
+    margin: 10px; 
+
+}
+.about-img{
+    align-self: center;
+}
+.about-text{
+    height: 550px;
+    max-width: 100%;  
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.about-text h2{
+    font-family: 'Playfair', serif;
+    font-size: 45px;
+    color: #AC974C;
+}
+.about-text p{
+    font-family: 'Prata', serif;
+    font-size: 20px;
+}
+@font-face {
+    font-family: "Alta";
+    src: url(/static/alta-regular.otf);
+}
+.logo{
+    font-family: "Alta";
+    width: 260px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#AC974C;
+    font-size: 20px;
+    font-family: 'Alta';
+} 
