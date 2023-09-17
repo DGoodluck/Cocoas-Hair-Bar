@@ -1,40 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coco's Hair Bar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair:opsz@5..1200&family=Prata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-</head>
-<body>
-    <div class="header-container">
-        <div class="navbar">
-            <h2 class="logo">COCOA'S HAIR BAR</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Make Appointment</a></li>
-                    <li><a href="#"><img src="/static/icons8-instagram-48.png"></a></li>
-                    <li><a href="#"><img src="/static/icons8-snapchat-30.png"></a></li>
-                    <li><a href="#"><img src="/static/icons8-email-24.png"></a></li>
-                    <li><a href="#"><img src="/static/icons8-earth-30.png"></span></a></li>
-                </ul>
-            </nav>
+{%include 'header.html'%}
+    <section class="main">
+        <div class="about-container">
+            <div class="about about-img"><img src="https://lirp.cdn-website.com/4a0ce194/dms3rep/multi/opt/image_6483441_preview_rev_1-378w.png", width="550px", height="550px"></div>
+            <div class="about about-text">
+                <h2>With over 20 years of experience, </h2>
+                <p>Colana is an international style innovator, creating cutting edge hair designs for everyone and influencers worldwide. Colana has a true eye for beauty and stays on top of trends by constantly revitalizing her style and skills. Specializing in weaves, wigs silk press and wraps.</p>
+            </div>
         </div>
-    </div>
-    <div class="about-container">
-        <div class="about about-img"><img src="https://lirp.cdn-website.com/4a0ce194/dms3rep/multi/opt/image_6483441_preview_rev_1-378w.png", width="450", height="550px"></div>
-        <div class="about about-text">
-            <h2>With over 20 years of experience, </h2>
-            <p>Colana is an international style innovator, creating cutting edge hair designs for everyone and influencers worldwide. Colana has a true eye for beauty and stays on top of trends by constantly revitalizing her style and skills. Specializing in weaves, wigs silk press and wraps</p>
-    
+    </section>
+    <section class="slides">
+        <div class="main-carousel">
+            <div class="cell"><img src="https://cdn1.greatfon.com/v1/9424d21f4f82d0d7f77f8ebbe3211a9b.jpg"></div>
+            <div class="cell"><img src="https://cdn1.greatfon.com/v1/0981592bf51a47651c17575d353ce3e7.jpg" alt=""></div>
+            <div class="cell"><img src="https://cdn1.greatfon.com/v1/c6347cfb89f065a538dca621af8dbddb.jpg" alt=""></div>
         </div>
-    </div>
+    </section>
+    <section class="info">
+        <div class="row sqs-row">
+            <div class="col sqs-col-1 span-1"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1"></div></div>
+            <div class="col sqs-col-3 span-3">
+                <div class="sqs-block html-block sqs-block-html">
+                    <div class="sqs-html-content">
+                        <h2 style="text-align:center;white-space:pre-wrap;">CALL</h2>
+                        <p style="text-align:center;white-space:pre-wrap;">
+                            <a href="tel:(514) 365-4444" target="_blank">(514) 365-4444</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col sqs-col-4 span-4">
+                <div class="sqs-block html-block sqs-block-html">
+                    <div class="sqs-html-content">
+                        <h2 style="text-align:center;white-space:pre-wrap;">VISIT</h2>
+                        <p style="text-align:center;white-space:pre-wrap;">
+                            <a href="https://www.google.com/maps?q=1658 Rue Thierry, LaSalle Quebec H8N 2K4" target="_blank">1658 Rue Thierry, LaSalle Quebec H8N 2K4</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col sqs-col-3 span-3">
+                <div class="sqs-block html-block sqs-block-html">
+                    <div class="sqs-html-content">
+                        <h2 style="text-align:center;white-space:pre-wrap;">EMAIL</h2>
+                        <p style="text-align:center;white-space:pre-wrap;">
+                            <a href="mailto:colanawilliams@gmail.com" target="_blank">colanawilliams@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col sqs-col-1 span-1"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1"></div></div>
+        </div>
+    </section>
+    <section class="payment-options">
+            <div class="row sqs-row">
+        
+                <div class="col sqs-col-3 span-3">
+                    <div class="sqs-block html-block sqs-block-html">
+                        <div class="sqs-html-content pay-icon">
+                            <img src="static/icons8-paypal-48.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col sqs-col-3 span-3">
+                    <div class="sqs-block html-block sqs-block-html">
+                        <div class="sqs-html-content pay-icon">
+                            <img src="static/icons8-visa-48.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col sqs-col-3 span-3">
+                    <div class="sqs-block html-block sqs-block-html">
+                        <div class="sqs-html-content pay-icon">
+                            <img src="static/icons8-mastercard-48.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+{%include 'footer.html'%}
+
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround:true,
+  freeScroll: true
+});
+</script>
 </body>
 </html>

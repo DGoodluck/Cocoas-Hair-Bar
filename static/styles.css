@@ -31,7 +31,9 @@
 .about-text p{
     font-family: 'Prata', serif;
     font-size: 20px;
+    color: white;
 }
+
 @font-face {
     font-family: "Alta";
     src: url(/static/alta-regular.otf);
@@ -42,11 +44,6 @@
     cursor: pointer;
     overflow: hidden;
     white-space: nowrap;
-}
-.menu-icon{
-    width: 30px;
-    cursor: pointer;
-    margin-left: 40px;
 }
 .navbar{
     height: 12%;
@@ -61,6 +58,7 @@ nav{
     text-align: right;
 }
 nav ul li{
+    padding-top: 10px;
     display: inline-block;
     list-style: none;
     margin-left: 60px;
@@ -71,3 +69,64 @@ nav ul li a{
     font-size: 20px;
     font-family: 'Alta';
 } 
+.cell{
+    width: 33%;
+    height:350px;
+    margin:0 15px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 2%;
+}
+.cell img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+h5{
+    font-family: 'Playfair', serif;
+    font-weight: bold;
+}
+.nav-item{
+    font-family: 'Playfair', serif;
+    font-size: 20px;
+    color: black;
+}
+.nav-link{
+    color: black !important;
+}
+.copyright{
+    font-family: 'Playfair', serif;
+    font-size: 20px;
+    padding-left: 20px;
+    color: black !important;
+}
+.nav img{
+    width: 46px;
+    height: 46px;
+}
+nav img{
+    width: 38px;
+    height: 38px;
+}
+.sqs-html-content{
+    font-family: 'Playfair', serif;
+    font-weight: bold;
+    padding-top: 80px;
+    align-items: center;
+}
+.sqs-html-content a{
+    font-weight: normal;
+    font-size: larger;
+    text-decoration: none;
+    color: #AC974C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.payment-options .sqs-html-content.pay-icon img{
+    padding-left: 45%;
+    margin-top: -100px;
+}
+
+
