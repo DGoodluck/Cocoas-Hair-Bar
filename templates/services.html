@@ -1,0 +1,160 @@
+{%include 'header.html'%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+</head>
+<body>
+    <div class="item-menu">
+        <div class="container">
+            <button type="button" class="collapsible">
+                Basic Services
+                <div class="openclose">
+                    <img src="static/icons8-x-48.png">
+                </div>
+            </button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
+        </div>  
+        <div class="container">
+        <button type="button" class="collapsible">
+            Wigs
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Wigs...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Weaves
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Weaves...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Braids
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Braids...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Silk Press
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Silk Press...</p>
+            </div>  
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Silk Wraps
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Silk Wraps...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Locs
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Locs...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Colour
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Colour...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Haircuts
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Haircuts...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Ponytails/Updos
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Ponytails/Updos...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Chemical Services
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Chemical Services...</p>
+            </div>
+        </div>
+        <div class="container">
+        <button type="button" class="collapsible">
+            Treatments
+            <div class="openclose">
+                <img src="static/icons8-x-48.png">
+            </div>
+        </button>
+            <div class="content">
+                <p>Description for Treatments...</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</script>
+</html>

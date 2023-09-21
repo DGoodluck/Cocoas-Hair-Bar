@@ -138,6 +138,53 @@ nav img{
     margin-top: -250px;
     margin-bottom: -200px;
 }
-
+.collapsible {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 65%;
+    align-items: center;
+    border-top-color: black;
+    border-width: 4px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    text-align: left;
+    outline: none;
+    font-size: 26px;
+    font-family: 'Playfair', serif;
+    font-weight: bold;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.openclose{
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+.active, .collapsible:hover {
+    background-color: #555;
+}
+.active .openclose{
+    transform: rotate(0);
+    transition: 0.2s;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Playfair', serif;
+    font-size: 18px;
+    width: 65%;
+    align-items: center;
+    margin-left: 250px;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+.container{
+    width: 100%;
+}
 
 

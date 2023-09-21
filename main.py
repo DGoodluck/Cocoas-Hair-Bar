@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -50,6 +50,11 @@ def home():
         images = result.scalars()
         print(images)
         return render_template('index.html', images=images)
+    
+@app.route("/services")
+def services():
+    return render_template('services.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
