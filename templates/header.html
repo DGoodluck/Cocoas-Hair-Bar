@@ -15,19 +15,61 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <div class="header-container">
-        <div class="navbar">
-            <h2 class="logo">COCOA'S HAIR BAR</h2>
-            <nav>
-                <ul>
-                    <li><a href="{{url_for('home')}}">Home</a></li>
-                    <li><a href="#">Make Appointment</a></li>
-                    <li><a href="{{url_for('services')}}">Services</a></li>
-                    <li><a href="https://instagram.com/cocoashairbar/" target="_blank"><img src="/static/icons8-instagram-48.png"></a></li>
-                    <li><a href="https://snapchat.com/colanawill" target="_blank"><img src="/static/icons8-snapchat-48.png"></a></li>
-                    <li><a href="mailto:colanawilliams@gmail.com" target="_blank"><img src="/static/icons8-email-48.png"></a></li>
-                    <li><a href="#" target="_blank"><img src="/static/icons8-earth-48.png"></span></a></li>
-                </ul>
-            </nav>
+    <!-- Navbar for Large Screens (Full Screen) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-block">
+        <div class="container">
+            <a href="{{url_for('home')}}"><h2 class="logo">COCOA'S HAIR BAR</h2></a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="{{url_for('home')}}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://app.acuityscheduling.com/schedule.php?owner=30422180" target="_blank" class="acuity-embed-button">Book Appointment</a>
+                    <script src="https://embed.acuityscheduling.com/embed/button/30422180.js" async></script>
+                </li>
+                <li class="nav-item">
+                    <a href="{{url_for('services')}}">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://instagram.com/cocoashairbar/" target="_blank"><img src="/static/icons8-instagram-48.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://snapchat.com/colanawill" target="_blank"><img src="/static/icons8-snapchat-48.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:colanawilliams@gmail.com" target="_blank"><img src="/static/icons8-email-48.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" target="_blank"><img src="/static/icons8-earth-48.png"></a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <!-- Your content goes here -->
+
+    <!-- Navbar for Small Screens (Hidden on Full Screen) -->
+    <nav class="navbar navbar-light bg-light d-lg-none">
+        <div class="small-container">
+            <a href="{{url_for('home')}}"><h2 class="logo">COCOA'S HAIR BAR</h2></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://app.acuityscheduling.com/schedule.php?owner=30422180" target="_blank" class="acuity-embed-button">Book Appointment</a>
+                    <script src="https://embed.acuityscheduling.com/embed/button/30422180.js" async></script>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('services')}}">Services</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

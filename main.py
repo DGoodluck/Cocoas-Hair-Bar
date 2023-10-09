@@ -48,13 +48,15 @@ def home():
     with app.app_context():
         result = db.session.execute(db.select(Image).order_by(Image.id))
         images = result.scalars()
-        print(images)
         return render_template('index.html', images=images)
     
 @app.route("/services")
 def services():
     return render_template('services.html')
+@app.route("/book-appointment")
+def book():
+    return render_template('book.html')
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)

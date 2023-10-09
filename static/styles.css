@@ -1,5 +1,6 @@
 body, html {
     overflow-x: hidden;
+    background-color: #F3EEDD !important;
   }
 .about-container { 
     display: grid; 
@@ -8,7 +9,7 @@ body, html {
     width: 100%; 
     align-items: center;
     align-content: center;
-    background-color: black;
+    background-color: #000000;
 } 
 .about { 
     margin: 10px; 
@@ -41,13 +42,6 @@ body, html {
     font-family: "Alta";
     src: url(/static/alta-regular.otf);
 }
-.logo{
-    font-family: "Alta";
-    width: 260px;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-}
 .navbar{
     height: 12%;
     display: flex;
@@ -55,12 +49,24 @@ body, html {
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
+    background-color: #F3EEDD !important;
+}
+.navbar a {
+    text-decoration: none;
+}
+.logo{
+    font-family: "Alta";
+    width: 260px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000000;
 }
 nav{
     flex:1;
     text-align: right;
 }
-nav ul li{
+nav ul li .nav-item{
     padding-top: 10px;
     display: inline-block;
     list-style: none;
@@ -71,13 +77,32 @@ nav ul li a{
     color:#AC974C;
     font-size: 20px;
     font-family: 'Alta';
+    padding-inline: 30px;
 } 
+.small-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    margin-left: -30px;
+}
+button.navbar-toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .cell{
     width: 33%;
     height:350px;
-    margin:0 15px;
+    margin:0 8px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0px;
     margin-top: 2%;
 }
 .cell img{
@@ -93,16 +118,16 @@ h5{
 .nav-item{
     font-family: 'Playfair', serif;
     font-size: 20px;
-    color: black;
+    color: #000000;
 }
 .nav-link{
-    color: black !important;
+    color: #000000 !important;
 }
 .copyright{
     font-family: 'Playfair', serif;
     font-size: 20px;
     padding-left: 20px;
-    color: black !important;
+    color: #000000 !important;
 }
 .nav img{
     width: 46px;
@@ -139,13 +164,13 @@ nav img{
     margin-bottom: -200px;
 }
 .collapsible {
-    background-color: #fff;
-    color: black;
+    background-color: #F3EEDD;
+    box-shadow: inset 5px;
     cursor: pointer;
     padding: 18px;
     width: 80%;
     align-items: center;
-    border-top-color: black;
+    border-top-color: #000000;
     border-width: 3px;
     border-left: none;
     border-right: none;
@@ -160,6 +185,9 @@ nav img{
     align-items: center;
     justify-content: space-between;
 }
+button span{
+    color: #000000;
+}
 .item-menu{
     padding-top: 80px;
 }
@@ -168,7 +196,7 @@ nav img{
     transition: 0.2s;
 }
 .active, .collapsible:hover {
-    background-color: white;
+    background-color: #ebdeb2;
 }
 .hover-underline-animation {
     display: inline-block;
@@ -214,6 +242,17 @@ nav img{
     align-items: center;
     margin-left: 140px;
     transition: max-height 0.2s ease-out;
+    background-color: #ebdeb2;
+    position: relative; /* Add relative positioning to contain pseudo-element */
+}
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7px; /* Adjust the height of the shadow as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, transparent 100%); /* Create a gradient shadow at the top */
 }
 .container{
     width: 100%;
@@ -230,6 +269,7 @@ nav img{
     font-family: 'Playfair', serif;
     font-size: 48px;
     font-weight: bold;
+    color: #000000;
 }
 .menu-list {
     padding-left: 10px;
@@ -264,6 +304,81 @@ nav img{
 .menu-block p{
     font-size: 20px;
 }
+.acuity-embed-button {
+    all: unset !important;
+}
+.acuity-embed-button {
+    text-decoration: none !important;
+    color: #AC974C !important;
+    font-size: 20px !important;
+    font-family: 'Alta' !important;
+    
+}
+ /* Adjust styles for small screens (phones and tablets) */
+ @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar li {
+        margin: 10px 0; /* Adjust spacing as needed */
+    }
+}
+@media (max-width: 768px) {
+    .col {
+      font-size: 14px; /* Adjust as needed */
+      width: 50%;
+    }
+  
+    .container {
+      width: 90%; /* Adjust as needed */
+      margin: 0 auto; /* Centers the container */
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+    }
 
+    .about-img {
+        margin: 0 auto;
+    }
 
+    .about-text {
+        height: auto;
+    }
+
+    .navbar {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .cell {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .cell img {
+        height: auto;
+    }
+
+    /* Add more media queries as needed */
+}
 
