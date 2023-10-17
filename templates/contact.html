@@ -1,0 +1,41 @@
+{% include 'header.html' %}
+
+<div> <!-- Opening <div> tag -->
+    <div class="contact-title">
+        <h2>Contact Us</h2>
+    </div>
+</div> <!-- Closing <div> tag -->
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="add_flashes">
+        {% for message in messages %}
+            <strong>{{ message }}</strong>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endwith %}
+<div>
+    <form method="post">
+        <div class="email-window">
+            <div class="form-field">
+                <div class="top-form-row">
+                    {{form.f_name}}
+                    {{form.l_name}}
+                </div>
+                <div class="bottom-form-row">
+                    {{form.email}}
+                    {{form.phone_number}}
+                </div>
+                <div class="text-row">
+                    {{form.message}}
+                </div>
+            </div>
+            <div class="form-submit-button">
+                {{ form.hidden_tag() }}
+                {{form.submit(class="btn btn-primary")}}
+            </div>
+        </div>
+    </form>
+</div>
+
+{% include 'footer.html' %}
