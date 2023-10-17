@@ -87,7 +87,6 @@ nav ul li a{
     display: flex;
     justify-content: center;
     width: 100%;
-    align-items: center;
     align-content: center;
     margin-left: -30px;
 }
@@ -95,6 +94,7 @@ button.navbar-toggler {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 .navbar-nav {
     display: flex;
@@ -432,7 +432,10 @@ button span{
         flex-direction: column;
         align-items: center;
     }
-    
+    .navbar-nav{
+        align-items: center;
+        justify-content: center;
+    }
     .navbar ul {
         flex-direction: column;
         align-items: center;
@@ -441,8 +444,10 @@ button span{
     .navbar li {
         margin: 10px 0; /* Adjust spacing as needed */
     }
-}
-@media (max-width: 768px) {
+    .header-icons{
+        display: flex;
+        justify-content: space-around;
+    }
     .col {
       font-size: 14px; /* Adjust as needed */
       width: 50%;
@@ -490,7 +495,47 @@ button span{
     .cell img {
         height: auto;
     }
-
     /* Add more media queries as needed */
 }
+@media (max-width: 480px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        text-align: center;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        margin: 0 auto;
+    }
+    .toggler-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; /* Top and bottom margins are 0, left and right margins are auto */
+    }
+    .small-container {
+        display: flex;
+        text-align: center;
+        justify-content: center; /* Center the content */
+        align-items: center;
+        flex-direction: column;
+        margin: 0; /* Top, right, bottom, and left margins are 0 */
+    }
+    .navbar.navbar-light.bg-light.d-lg-none{
+        text-align: center;
+    }
+    .navbar-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
 
