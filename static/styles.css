@@ -126,6 +126,16 @@ h5{
     font-size: 20px;
     color: #000000;
 }
+.flex-container{
+    justify-content: space-evenly;
+}
+.hours-div{
+    width:fit-content ;
+}
+.opening-hours{
+    text-align: justify;
+    justify-content: space-between;
+ }
 .nav-link{
     color: #000000 !important;
 }
@@ -142,6 +152,13 @@ h5{
 nav img{
     width: 38px;
     height: 38px;
+}
+.flex-container {
+    display: flex;
+}
+
+.flex-grow {
+    flex-grow: 1;
 }
 .sqs-html-content{
     font-family: 'Playfair', serif;
@@ -427,7 +444,7 @@ button span{
     justify-content: center;
 }
  /* Adjust styles for TABLET screens */
- @media (max-width: 990px) {
+ @media (max-width: 991px) {
     /* Header */
     .navbar {
         flex-direction: column;
@@ -504,8 +521,24 @@ button span{
         flex-direction: column;
         margin: 0; /* Top, right, bottom, and left margins are 0 */
     }
-    /* Add more media queries as needed */
-}
+    /* Footer */
+    .opening-hours{
+       text-align: justify;
+    }
+    .flex-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* Services Page*/
+    .collapsible{
+        margin: 0 50px 0 0;
+        width: 100%;
+    }
+    .content{
+        margin: 0 50px 0 0;
+        width: 100%;
+    }
+ }
 @media (max-width: 480px) {
     /* Header */
     .navbar {
@@ -544,8 +577,32 @@ button span{
         justify-content: center;
         align-items: center;
     }
+    /* Footer */
+    .copyright-div{
+        width: 100%;
+    }
+    .flex-container{
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .hours-div{
+        width: max-content;
+    }
+    .opening-hours{
+        text-align: center;
+        justify-content: space-between;
+    }
+    /* Contact Page */
+    .top-form-row{
+    flex-direction: column;   
+    }
+    .top-form-row input{
+    width: max-content;
+    }
+    .bottom-form-row{
+    flex-direction: column;   
+    }
+    .bottom-form-row input{
+    width: max-content;
+    }
 }
-
-
-
-
