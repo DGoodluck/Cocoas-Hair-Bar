@@ -426,8 +426,9 @@ button span{
     align-items: center;
     justify-content: center;
 }
- /* Adjust styles for small screens (phones and tablets) */
- @media (max-width: 768px) {
+ /* Adjust styles for TABLET screens */
+ @media (max-width: 990px) {
+    /* Header */
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -495,9 +496,18 @@ button span{
     .cell img {
         height: auto;
     }
+    .small-container {
+        display: flex;
+        text-align: center;
+        justify-content: center; /* Center the content */
+        align-items: center;
+        flex-direction: column;
+        margin: 0; /* Top, right, bottom, and left margins are 0 */
+    }
     /* Add more media queries as needed */
 }
 @media (max-width: 480px) {
+    /* Header */
     .navbar {
         display: flex;
         justify-content: center;
