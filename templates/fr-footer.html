@@ -1,0 +1,43 @@
+<footer class="container py-5 my-5 border-top">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 flex-container">
+        <div class="col mb-3 copyright-div">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="copyright text-body-secondary">Tous Droits Réservés |<br> BAR à CHEVEUX COCOA © 2023</p>
+        </div>
+
+        <div class="col mb-3">
+            <h5>Services</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="{{url_for('home')}}" class="nav-link p-0 text-body-secondary">Accueil</a></li>
+                <li class="nav-item mb-2"><a href="https://app.acuityscheduling.com/schedule.php?owner=30422180" class="nav-link p-0 text-body-secondary">Prendez Rendez-vous</a></li>
+                <script src="https://embed.acuityscheduling.com/embed/button/30422180.js" async></script>
+                <li class="nav-item mb-2"><a href="{{url_for('services')}}" class="nav-link p-0 text-body-secondary">Services</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5>Contactez-nous</h5>
+            <ul class="nav flex-column">
+                <li><a href="{{url_for('contact')}}"><img src="/static/icons8-email-48.png"></a></li>
+                <li><a href="https://instagram.com/cocoashairbar/" target="_blank"><img src="/static/icons8-instagram-48.png"></a></li>
+                <li><a href="https://snapchat.com/colanawill" target="_blank"><img src="/static/icons8-snapchat-48.png"></a></li>
+            </ul>
+        </div>
+      
+
+        <div class="col mb-3 order-md-6 hours-div">
+            <h5>Heures</h5>
+            <ul class="nav flex-column opening-hours">
+                <li class="nav-item mb-2">Lundi: Fermé</li>
+                <li class="nav-item mb-2">Mardi : 10h00 - 18h00</li>
+                <li class="nav-item mb-2">Mercredi : 10h00 - 19h00</li>
+                <li class="nav-item mb-2">Mardi: 10h00 - 20h30</li>
+                <li class="nav-item mb-2">Vendredi : 10h00 - 20h30</li>
+                <li class="nav-item mb-2">Samedi : 9h00 - 19h00</li>
+                <li class="nav-item mb-2">Dimanche: Fermé</li>
+            </ul>
+        </div>
+    </div>
+</footer>
