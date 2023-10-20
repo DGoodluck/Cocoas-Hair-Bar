@@ -118,7 +118,7 @@ def fr_home():
         photos = result.scalars()
         return render_template('fr-index.html', photos=photos)
 
-@app.route("/fr/services")
+@app.route("/services/fr")
 def fr_services():
     """
     Handles the route for the french service page. 
@@ -126,7 +126,7 @@ def fr_services():
     """
     return render_template('fr-services.html')
 
-@app.route("/fr/contact", methods=['GET', 'POST'])
+@app.route("/contact/fr", methods=['GET', 'POST'])
 def fr_contact():
     """
     This function handles the route for the french contact page. 
