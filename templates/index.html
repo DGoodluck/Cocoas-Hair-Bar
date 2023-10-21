@@ -1,7 +1,7 @@
 {%include 'header.html'%}
     <section class="main">
         <div class="about-container">
-            <div class="about about-img"><img src="https://lirp.cdn-website.com/4a0ce194/dms3rep/multi/opt/image_6483441_preview_rev_1-378w.png", width="550px", height="550px"></div>
+            <div class="about about-img"><img src="https://lirp.cdn-website.com/4a0ce194/dms3rep/multi/opt/image_6483441_preview_rev_1-378w.png", alt="Brand photo", width="550px", height="550px"></div>
             <div class="about about-text">
                 <h2>With over 20 years of experience, </h2>
                 <p>Colana is an international style innovator, creating cutting edge hair designs for everyone and influencers worldwide. Colana has a true eye for beauty and stays on top of trends by constantly revitalizing her style and skills. Specializing in weaves, wigs silk press and wraps.</p>
@@ -11,7 +11,7 @@
     <section class="slides">
         <div class="main-carousel">
             {%for photo in photos%}
-                <div class="cell"><img src="{{photo.link}}"></div>
+                <div class="cell"><img src="{{photo.link}}", alt="carousel photo"></div>
             {%endfor%}
         </div>
     </section>
@@ -60,7 +60,7 @@
                 <div class="col sqs-col-3 span-3">
                     <div class="sqs-block html-block sqs-block-html">
                         <div class="sqs-html-content pay-icon">
-                            <img src="static/icons8-paypal-48.png" alt="">
+                            <img src="static/icons8-paypal-48.png" alt="Paypal Icon">
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="col sqs-col-3 span-3">
                     <div class="sqs-block html-block sqs-block-html">
                         <div class="sqs-html-content pay-icon">
-                            <img src="static/icons8-visa-48.png" alt="">
+                            <img src="static/icons8-visa-48.png" alt="Visa Icon">
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="col sqs-col-3 span-3">
                     <div class="sqs-block html-block sqs-block-html">
                         <div class="sqs-html-content pay-icon">
-                            <img src="static/icons8-mastercard-48.png" alt="">
+                            <img src="static/icons8-mastercard-48.png" alt="Mastercard Icon">
                         </div>
                     </div>
                 </div>

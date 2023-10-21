@@ -137,7 +137,7 @@ def fr_contact():
     form = EmailFormFr()
     if request.method == 'POST' and form.validate_on_submit():
         email_sender = os.getenv('EMAIL')
-        email_receiver = 'goodluckdayshaun@gmail.com'
+        email_receiver = os.getenv('EMAIL_RECEIVER')
         email_password = os.getenv('PASSWORD')
         
         em = EmailMessage()
