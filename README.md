@@ -1,5 +1,7 @@
 README
+
 This is a web application a Hair Salon Page. The application is built using Flask, SQLAlchemy, and Selenium.
+
 Link to Page: https://dg716.pythonanywhere.com/
 
 Features
