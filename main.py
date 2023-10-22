@@ -84,7 +84,7 @@ def contact():
     form = EmailForm()
     if request.method == 'POST' and form.validate_on_submit():
         email_sender = os.getenv('EMAIL')
-        email_receiver = 'goodluckdayshaun@gmail.com'
+        email_receiver = os.getenv('EMAIL_RECEIVER')
         email_password = os.getenv('PASSWORD')
         
         em = EmailMessage()
@@ -161,4 +161,4 @@ def fr_contact():
     return render_template('fr-contact.html', form=form)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)
+    app.run()
