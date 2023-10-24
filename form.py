@@ -6,7 +6,6 @@ class EmailForm(FlaskForm):
     """
     Form class for collecting email information from user.
     Inherits from FlaskForm
-    
     """
     f_name = StringField(label='First Name', render_kw={"placeholder": "First Name"}, validators=[DataRequired()])
     l_name = StringField(label='Last Name', render_kw={"placeholder": "Last Name"}, validators=[DataRequired()])
