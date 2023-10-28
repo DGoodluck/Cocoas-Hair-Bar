@@ -2,7 +2,7 @@ README
 
 This is a web application a Hair Salon Page. The application is built using Flask, SQLAlchemy, and Selenium.
 
-Link to Page: https://dg716.pythonanywhere.com/
+Link to Page: https://www.cocoashairbar.com/
 
 Features
 Home Page: Displays a collection of placeholder images retrieved from the iStockphoto website. The images are stored in a SQLite database.
