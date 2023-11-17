@@ -23,7 +23,7 @@ class EmailFormFr(FlaskForm):
     """
     f_name = StringField(label='Prénom', render_kw={"placeholder": "Prénom"}, validators=[DataRequired(message="Ce champ est requis")])
     l_name = StringField(label='Nom', render_kw={"placeholder": "Nom"}, validators=[DataRequired(message="Ce champ est requis")])
-    email = StringField(label='Email', render_kw={"placeholder": "Email"}, validators=[DataRequired(message="Ce champ est requis"), Email(message="Email invalide")])
+    email = StringField(label='Email', render_kw={"placeholder": "Courriel"}, validators=[DataRequired(message="Ce champ est requis"), Email(message="Email invalide")])
     phone_number = StringField(label='Numéro de téléphone', render_kw={"placeholder": "Numéro de téléphone"}, validators=[DataRequired(message="Ce champ est requis"), Regexp(regex="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$", message="Numéro de téléphone invalide")])
     message = TextAreaField(label="Écrire un message", render_kw={"placeholder": "Écrire un message"}, validators=[DataRequired(message="Ce champ est requis")])
     submit = SubmitField(label="Envoyer le message") 

@@ -11,7 +11,13 @@
     <section class="slides">
         <div class="main-carousel">
             {%for photo in photos%}
-                <div class="cell"><img src="static/index-images/{{photo}}"></div>
+                <div class="cell">
+                    {% if photo.is_video %}
+                        <video src="static/index-images/{{photo.filename}}" autoplay loop muted playsinline></video>
+                    {% else %}
+                        <img src="static/index-images/{{photo.filename}}" alt="carousel photo">
+                    {% endif %}
+                </div>
             {%endfor%}
         </div>
     </section>

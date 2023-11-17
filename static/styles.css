@@ -126,7 +126,11 @@ button.navbar-toggler {
     height: 350px;
     object-fit: cover;
 }
-
+.cell video{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
 h5{
     font-family: 'Playfair', serif;
     font-weight: bold;
@@ -524,6 +528,9 @@ button span{
     .cell img {
         height: auto;
     }
+    .cell video {
+        height: auto;
+    }
     .small-container {
         display: flex;
         text-align: center;
@@ -586,6 +593,11 @@ button span{
         margin-top: 2%;
     }
     .cell img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .cell video{
         width: 100%;
         height: 350px;
         object-fit: cover;

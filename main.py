@@ -40,8 +40,11 @@ def home():
     """
     folder_dir = "static/index-images"
     photos = []
-    for images in os.listdir(folder_dir):
-            photos.append(images)
+    for filename in os.listdir(folder_dir):
+        if filename.endswith('.webm'):
+            photos.append({'is_video': True, 'filename': filename})
+        else:
+            photos.append({'is_video': False, 'filename': filename})
     return render_template('index.html', photos=photos)
     
 @app.route("/services")
@@ -79,8 +82,11 @@ def fr_home():
     """
     folder_dir = "static/index-images"
     photos = []
-    for images in os.listdir(folder_dir):
-        photos.append(images)
+    for filename in os.listdir(folder_dir):
+        if filename.endswith('.webm'):
+            photos.append({'is_video': True, 'filename': filename})
+        else:
+            photos.append({'is_video': False, 'filename': filename})
     return render_template('fr-index.html', photos=photos)
 
 @app.route("/services/fr")
