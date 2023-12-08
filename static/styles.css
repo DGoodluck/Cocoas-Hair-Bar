@@ -45,6 +45,7 @@ body, html {
 @font-face {
     font-family: "Alta";
     src: url(/static/alta-regular.otf);
+    font-display: swap;
 }
 .navbar{
     height: 12%;
