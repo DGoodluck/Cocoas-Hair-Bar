@@ -5,6 +5,11 @@ import ssl
 from flask import Flask, render_template, request, flash
 from dotenv import load_dotenv
 from form import EmailForm, EmailFormFr
+import psycopg2
+from psycopg2.errors import UniqueViolation
+
+def connect_to_db():
+    return psycopg2.connect(host='127.0.0.1', dbname='hair services', user='postgres', password='L$zj%WU', port='5433')
 
 app = Flask(__name__)
 load_dotenv()
@@ -53,7 +58,13 @@ def services():
     Handles the route for the service page. 
     Renders 'services.html' template when /services endpoint is hit
     """
-    return render_template('services.html')
+    conn = connect_to_db()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM services WHERE language = 'en'")
+    services_data = cursor.fetchall()
+    conn.close()
+
+    return render_template('services.html', services=services_data)
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
@@ -95,7 +106,13 @@ def fr_services():
     Handles the route for the french service page. 
     Renders 'fr-services.html' template when /fr/services endpoint is hit
     """
-    return render_template('fr-services.html')
+    conn = connect_to_db()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM services WHERE language = 'fr'")
+    services_data = cursor.fetchall()
+    conn.close()
+    
+    return render_template('fr-services.html', services=services_data)
 
 @app.route("/contact/fr", methods=['GET', 'POST'])
 def fr_contact():
@@ -118,3 +135,5 @@ def fr_contact():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
+    conn = connect_to_db()
+    cursor = conn.cursor()
