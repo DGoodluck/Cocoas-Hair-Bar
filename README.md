@@ -1,11 +1,11 @@
 README
 
-This is a web application a Hair Salon Page. The application is built using Flask, SQLAlchemy, and Selenium.
+This is a web application a Hair Salon Page. The application is built using Flask, HTML, CSS.
 
 Link to Page: https://www.cocoashairbar.com/
 
 Features
-Home Page: Displays a collection of placeholder images retrieved from the iStockphoto website. The images are stored in a SQLite database.
+Home Page: Displays a collection of placeholder WEBM images and GIFs retrieved locally.
 
 Services Page: Provides information about the services offered by the website.
 
@@ -16,18 +16,8 @@ French Version: The application also includes a French version of the home, serv
 Setup
 Install the required dependencies by running the following command:
 
-
 pip install -r requirements.txt
 Create a .env file in the root directory and add the following environment variables:
-
-
-SECRET_KEY=your_secret_key
-SQLALCHEMY_DATABASE_URI=sqlite:///insta-images.db
-EMAIL=your_email_address
-EMAIL_RECEIVER=receiver_email_address
-PASSWORD=your_email_password
-Run the application using the following command:
-
 
 python app.py
 Access the application in your web browser by visiting http://localhost:5000.
@@ -43,8 +33,6 @@ templates/: Directory containing the HTML templates for the application.
 static/: Directory containing static files (CSS, JS, images) for the application.
 Dependencies
 Flask: Framework for building web applications in Python.
-SQLAlchemy: Toolkit for working with databases in Python.
-Selenium: Library for automating browser activities.
 Flask-SQLAlchemy: Integration of SQLAlchemy with Flask.
 python-dotenv: Library for reading environment variables from a .env file.
 Flask-WTF: Extension for handling HTML forms in Flask.
