@@ -1,5 +1,3 @@
-README
-
 This is a web application a Hair Salon Page. The application is built using Flask, HTML, CSS.
 
 Link to Page: https://www.cocoashairbar.com/
