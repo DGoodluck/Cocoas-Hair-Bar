@@ -19,9 +19,6 @@ Create a .env file in the root directory and add the following environment varia
 
 python app.py
 Access the application in your web browser by visiting http://localhost:5000.
-
-The first time the application is run, it will retrieve a collection of placeholder images from the iStockphoto website and store them in the database. The images are only retrieved once using the run_once.txt file to keep track of whether the script has been run before.
-
 File Structure
 app.py: The main Flask application file.
 form.py: Contains the form classes for the contact pages.
